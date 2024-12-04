@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="mainContent">
+        <h1><span id="sdText">Sort the Items into Their Correct Categories!</span></h1>
+        <h2 id="levelName"></h2>
+        <div class="game-container">
+            <div class="categories">
+                <!-- Categories will be generated dynamically -->
+            </div>
+            <div class="draggable-items">
+                <!-- Draggable items will be generated dynamically -->
+            </div>
+        </div>
+        <button id="checkBtn">Check Answers</button>
+        <button id="nextLevelBtn" style="display: none;">Proceed to Next Level</button>
+    </div>
+
+    <!-- Welcome Modal -->
+    <div id="welcomeModal" class="modal hidden">
+        <div class="modal-content">
+            <h2 class="modal-title">Welcome to the Sorting Game!</h2>
+            <p>In this game, you'll sort items into their correct categories. Drag and drop each item into the category you think it belongs to. Click "Check Answers" to see if you're correct. You have five attempts before the correct answers are revealed. Good luck!</p>
+            <button id="startGameBtn">Start Game!</button>
+        </div>
+    </div>
+
+    <!-- Congratulations Modal -->
+    <div id="congratsModal" class="modal hidden">
+        <div class="modal-content">
+            <h2 class="modal-title">Congratulations!</h2>
+            <p>You have completed all levels. Great job!</p>
+            <button id="restartGameBtn">Play Again</button>
+        </div>
+    </div>
+</body>
+</html>
